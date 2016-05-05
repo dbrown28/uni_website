@@ -5,17 +5,55 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <center>
-                <h1 style="color:black;">Jamaica</h1></center>
+   <!-- Bootstrap Carousel -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+          </ol>
+       
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img height = "3800" width = "1700" class="img-responsive center-block" src="http://jamaicainn.com/images/bluemountain.jpg" alt="Slide 1">
+              <div class="carousel-caption">
+                <h1>Blue Mountain, Jamaica</h>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img height = "3800" width = "1700" class="img-responsive center-block" src="http://jamaicainn.com/images/Jamaica-Firefly.jpg" alt="Slide 2">
+              <div class="carousel-caption">
+                <h1>Montego Bay, Jamaica</h1>
+              </div>
+            </div>
+            
+             <div class="item">
+              <img height = "3400" width = "1700" class="img-responsive center-block" src="http://jamaicainn.com/images/dunnsriverfalls.jpg" alt="Slide 3">
+              <div class="carousel-caption">
+                <h1>Dunnes River, Jamaica</h1>
+              </div>
+            </div>
+       
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-    </div>
     <style>
         body {
             background: black background-size: 100%;
@@ -24,6 +62,30 @@
             padding-top: 40px;
         }
     </style>
+    <center>
+    <h1><strong>National Anthem</strong></h1>
+    <p>Eternal Father bless our land</p>
+    <p>Guard us with Thy mighty hand</p>
+    <p>Keep us free from evil powers</p>
+    <p>Be our light through countless hours</p>
+    <p>To our leaders, Great Defender,</p>
+    <p>Grant true wisdom from above</p>
+    <p>Justice, truth be ours forever</p>
+    <p>Jamaica, land we love</p>
+    <p>Jamaica, Jamaica, Jamaica, land we love.</p>
+    <p>Teach us true respect for all</p>
+    <p>Stir response to duty's call</p>
+    <p>Strengthen us the weak to cherish</p>
+    <p>Give us vision lest we perish</p>
+    <p>Knowledge send us, Heavenly Father,</p>
+    <p>Grant true wisdom from above</p>
+    <p>Justice, truth be ours forever</p>
+    <p>Jamaica, land we love</p>
+    <p>Jamaica, Jamaica, Jamaica, land we love.</p>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3Jf1wwlE2RY" frameborder="0" allowfullscreen></iframe>
+    </center>
+    
     <ul>
         <li><a class="active" href="/">Home</a></li>
         <li><a href="/facts">Facts About Jamaica</a></li>

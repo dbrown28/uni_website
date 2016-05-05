@@ -34,3 +34,17 @@ li a:hover:not(.active) {
     background-size: cover;
     background-image: url(http://wallpapercave.com/wp/wZtizoK.png);
 }
+
+p {
+    font-family: serif;
+    font-size: 17px;
+}
+
+.carousel-caption {
+    font-size:50px;
+    color: black;
+}
+h1{
+    color: black;
+}
+
