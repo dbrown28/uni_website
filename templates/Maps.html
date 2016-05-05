@@ -1,0 +1,71 @@
+<html>
+<head>
+         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css') }}"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <center>
+    <div class="container"> 
+  <div class="jumbotron">
+  <center><h1 style="color:black;">Jamaica</center>
+  </div></div>
+  
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+  <div style='overflow:hidden;height:440px;width:700px;'>
+      <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+      <div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div>
+      <div><small><a href="http://www.buywebtrafficexperts.com">buy targeted traffic</a></small></div>
+      <style>
+          #gmap_canvas img {
+              max-width: none!important;
+              background: none!important
+          }
+      </style>
+  </div></center>
+  <script type='text/javascript'>
+      function init_map() {
+          var myOptions = {
+              zoom: 10,
+              center: new google.maps.LatLng(18.11741240504841, -77.38127875195312),
+              mapTypeId: google.maps.MapTypeId.TERRAIN
+          };
+          map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+          marker = new google.maps.Marker({
+              map: map,
+              position: new google.maps.LatLng(18.11741240504841, -77.38127875195312)
+          });
+          infowindow = new google.maps.InfoWindow({
+              content: '<strong>Title</strong><br>jamaica<br>'
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map, marker);
+          });
+          infowindow.open(map, marker);
+      }
+      google.maps.event.addDomListener(window, 'load', init_map);
+  </script>
+            <style>
+
+        body {
+            background: black
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-top: 40px;
+            }
+
+    </style>
+    </center>
+    <ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/facts">Facts About Jamaica</a></li>
+  <li><a class="active" href="/maps">Maps</a></li>
+  <li><a href="/things">Things To Do In Jamaica</a></li>
+  <li><a href="/home">Leave A Comment</a></li>
+</ul>
+</body>
