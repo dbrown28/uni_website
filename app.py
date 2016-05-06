@@ -43,7 +43,7 @@ def addrec():
             cur.execute("INSERT INTO students (name,addr,city,pin) VALUES (?,?,?,?)",(nm,addr,city,pin) )
             
             con.commit()
-            msg = "Record successfully added"
+            msg = "comment successfully added"
       except:
          con.rollback()
          msg = "error in insert operation"
